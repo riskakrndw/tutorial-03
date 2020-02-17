@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+    <head>
+        <title>View Detail</title>
+    </head>
+    <body>
+        <h2>Data</h2>
+        <div th:each="movie : ${movies}">
+            <h3 th:text="${movie.id}"></h3>
+            <h3 th:text="${movie.title}"></h3>
+            <h3 th:text="${movie.genre}"></h3>
+            <h3 th:text="${movie.budget}"></h3>
+            <h3 th:text="${movie.duration}"></h3>
+        </div>
+    </body>
+</html>
